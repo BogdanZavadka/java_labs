@@ -4,6 +4,7 @@ public record Interview(String interviewerName, double duration, boolean success
 
     final static String jobName = "FrontEnd";
 
+
     public Interview() {
         this("Interviewer Name 1");
     }
@@ -16,6 +17,10 @@ public record Interview(String interviewerName, double duration, boolean success
 
         this(interviewerName, duration, true, "Interviewee Name 1", 21, 1);
     }
+    public  Interview(String interviewerName, double duration, boolean success){
+        this(interviewerName, duration, success, "Interviewee Name 1", 21, 1);
+    }
+
 
     @Override
     public String toString(){
